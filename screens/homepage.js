@@ -31,6 +31,9 @@ const CardDetails = ({ index }) => (
     <Text style={[styles.text, styles.salary]}>
       Salary - {data[index].salary}
     </Text>
+    <Text style={[styles.text, styles.salary]}>
+      Location - {data[index].location}
+    </Text>
   </View>
 );
 
@@ -129,4 +132,5 @@ const styles = StyleSheet.create({
   heading: { fontSize: 24, marginBottom: 10, color: colors.gray },
   jobTitle: { color: colors.blue, fontSize: 20, fontWeight: "500" },
   salary: { color: colors.blue, fontSize: 20, fontWeight: "500" },
+  location: { color: colors.blue, fontSize: 15, fontWeight: "300" },
 });
